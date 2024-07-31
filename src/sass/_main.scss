@@ -1,47 +1,47 @@
 @use 'colors' as *;
 
-@font-face {
-	font-family: 'righteous';
-	src: url('../fonts/righteous-regular-webfont.woff2') format('woff2'),
-		url('../fonts/righteous-regular-webfont.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
-}
+// @font-face {
+// 	font-family: 'righteous';
+// 	src: url('../fonts/righteous-regular-webfont.woff2') format('woff2'),
+// 		url('../fonts/righteous-regular-webfont.woff') format('woff');
+// 	font-weight: normal;
+// 	font-style: normal;
+// 	font-display: swap;
+// }
 
-@font-face {
-	font-family: 'raleway';
-	src: url('../fonts/raleway-regular-webfont.woff2') format('woff2'),
-		url('../fonts/raleway-regular-webfont.woff') format('woff');
-	font-weight: 400;
-	font-style: normal;
-	font-display: swap;
-}
+// @font-face {
+// 	font-family: 'raleway';
+// 	src: url('../fonts/raleway-regular-webfont.woff2') format('woff2'),
+// 		url('../fonts/raleway-regular-webfont.woff') format('woff');
+// 	font-weight: 400;
+// 	font-style: normal;
+// 	font-display: swap;
+// }
 
-@font-face {
-	font-family: 'raleway-semi';
-	src: url('../fonts/ralewaysemibold-regular-webfont.woff2') format('woff2'),
-		url('../fonts/ralewaysemibold-regular-webfont.woff') format('woff');
-	font-weight: 600;
-	font-style: normal;
-	font-display: swap;
-}
+// @font-face {
+// 	font-family: 'raleway-semi';
+// 	src: url('../fonts/ralewaysemibold-regular-webfont.woff2') format('woff2'),
+// 		url('../fonts/ralewaysemibold-regular-webfont.woff') format('woff');
+// 	font-weight: 600;
+// 	font-style: normal;
+// 	font-display: swap;
+// }
 
-@font-face {
-	font-family: 'raleway-bold';
-	src: url('../fonts/raleway-bold-webfont.woff2') format('woff2'),
-		url('../fonts/raleway-bold-webfont.woff') format('woff');
-	font-weight: 700;
-	font-style: normal;
-	font-display: swap;
-}
+// @font-face {
+// 	font-family: 'raleway-bold';
+// 	src: url('../fonts/raleway-bold-webfont.woff2') format('woff2'),
+// 		url('../fonts/raleway-bold-webfont.woff') format('woff');
+// 	font-weight: 700;
+// 	font-style: normal;
+// 	font-display: swap;
+// }
 
-:root {
-	--heading-font: 'righteous', sans-serif;
-	--default-font: 'raleway', sans-serif;
-	--default-semi: 'raleway-semi', sans-serif;
-	--default-bold: 'raleway-bold', sans-serif;
-}
+// :root {
+// 	--heading-font: 'righteous', sans-serif;
+// 	--default-font: 'raleway', sans-serif;
+// 	--default-semi: 'raleway-semi', sans-serif;
+// 	--default-bold: 'raleway-bold', sans-serif;
+// }
 
 *,
 *::before,
@@ -73,6 +73,9 @@ body {
 }
 
 .header {
+	position: fixed;
+	width: 100%;
+
 	.navbar {
 		display: flex;
 		align-items: center;
@@ -91,10 +94,6 @@ body {
 			}
 		}
 
-		// &__menu-desktop {
-		// 	display: none;
-		// }
-
 		&__menu {
 			position: fixed;
 			top: 80px;
@@ -111,7 +110,7 @@ body {
 			&-item {
 				padding: 1.25em;
 				width: 100%;
-				font-family: var(--default-font);
+				font-family: 'Raleway', sans-serif;
 				font-size: 2.1rem;
 				color: $pure-white;
 				text-align: center;
@@ -131,6 +130,26 @@ body {
 
 	.nav-items-animation {
 		animation: navItemsAnimation 1s both;
+	}
+}
+
+main {
+	.section {
+		padding: 3em 1em;
+	}
+
+	.welcome {
+		position: relative;
+		height: 600px;
+		background-image: url('../img/hero-img-mobile.webp');
+		background-position: 10% 25%;
+		background-repeat: no-repeat;
+
+		&__shadow {
+		}
+
+		&__gradient {
+		}
 	}
 }
 
