@@ -154,6 +154,24 @@ main {
 		}
 	}
 
+	.h2-decoration {
+		display: flex;
+		align-items: center;
+
+		&-line {
+			width: 80px;
+			height: 3px;
+			background-color: $orange;
+		}
+
+		&-text {
+			margin-left: 0.5em;
+			font-family: 'Righteous', sans-serif;
+			color: $orange;
+			text-transform: uppercase;
+		}
+	}
+
 	.welcome {
 		position: relative;
 		padding-top: 80px;
@@ -261,15 +279,16 @@ main {
 				}
 
 				&-title {
-					margin-top: 0.25em;
+					margin-top: 0.5em;
 					font-family: 'Righteous', sans-serif;
-					font-size: 2.2rem;
+					font-size: 2.1rem;
 					color: $pure-white;
 				}
 
 				&-description {
 					margin-top: 0.3em;
 					font-family: 'Raleway', sans-serif;
+					font-size: 1.5rem;
 					color: #9a9a9a;
 					text-align: center;
 				}
@@ -280,13 +299,14 @@ main {
 					margin-top: 2em;
 					padding: 0.7em 1.3em;
 					font-family: 'Raleway', sans-serif;
-					font-size: 1.5rem;
+					font-size: 1.4rem;
 					font-weight: 800;
 					background-color: #4a4a4a;
 					color: $pure-white;
 					border: none;
 					border-radius: 26px;
 					text-transform: uppercase;
+					transition: background-color 0.3s, color 0.3s;
 					cursor: pointer;
 
 					svg {
@@ -297,12 +317,37 @@ main {
 						background-color: #8a8a8a;
 						border-radius: 50%;
 					}
+
+					&:hover {
+						background-color: #d6d6d6;
+						color: rgb(69, 69, 69);
+					}
 				}
 
 				&:nth-child(2),
 				&:nth-child(3) {
 					margin-top: 2em;
 				}
+			}
+		}
+	}
+
+	.aboutus {
+		&__box {
+			display: flex;
+			flex-direction: column;
+
+			&-img {
+				&-image {
+					width: 100%;
+					border-radius: 6px;
+				}
+			}
+
+			&-text {
+				display: flex;
+				flex-direction: column;
+				margin-top: 2em;
 			}
 		}
 	}
