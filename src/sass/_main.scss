@@ -144,7 +144,7 @@ main {
 	}
 
 	.main-heading {
-		font-size: 2.7rem;
+		font-size: 3rem;
 		color: $pure-white;
 		letter-spacing: 1px;
 		text-align: center;
@@ -156,6 +156,7 @@ main {
 
 	.welcome {
 		position: relative;
+		padding-top: 80px;
 		height: 500px;
 		background-image: url('../img/hero-img-mobile.webp');
 		background-position: 10% 25%;
@@ -180,7 +181,7 @@ main {
 				margin-bottom: 0.25em;
 				padding: 0.25em 0.5em;
 				width: 130px;
-				font-size: 1.7rem;
+				font-size: 1.6rem;
 				color: $pure-white;
 				background-color: $orange;
 				border-radius: 6px;
@@ -192,7 +193,7 @@ main {
 				padding: 0.6em 1em;
 				width: 190px;
 				font-family: 'Righteous', sans-serif;
-				font-size: 1.7rem;
+				font-size: 1.6rem;
 				color: $pure-white;
 				background-color: $dark;
 				border: none;
@@ -230,6 +231,74 @@ main {
 				rgba(112, 36, 19, 0.55) 82%,
 				rgba(255, 82, 43, 0.35) 100%
 			);
+		}
+	}
+
+	.services {
+		&__box {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+
+			&-service {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				padding: 1.5em 1em;
+				background-color: $dark;
+				border-radius: 6px;
+
+				&-icon {
+					width: 50px;
+					height: 50px;
+				}
+
+				&-title {
+					margin-top: 0.25em;
+					font-family: 'Righteous', sans-serif;
+					font-size: 2.2rem;
+					color: $pure-white;
+				}
+
+				&-description {
+					margin-top: 0.3em;
+					font-family: 'Raleway', sans-serif;
+					color: #9a9a9a;
+					text-align: center;
+				}
+
+				&-button {
+					display: flex;
+					align-items: center;
+					margin-top: 1.5em;
+					padding: 0.7em 1.3em;
+					font-family: 'Raleway', sans-serif;
+					font-size: 1.5rem;
+					font-weight: 800;
+					background-color: #4a4a4a;
+					color: $pure-white;
+					border: none;
+					border-radius: 26px;
+					text-transform: uppercase;
+					cursor: pointer;
+
+					svg {
+						margin-left: 1em;
+						padding: 0.35em;
+						width: 25px;
+						height: 25px;
+						background-color: #8a8a8a;
+						border-radius: 50%;
+					}
+				}
+
+				&:nth-child(2),
+				&:nth-child(3) {
+					margin-top: 2em;
+				}
+			}
 		}
 	}
 }
