@@ -346,6 +346,8 @@ main {
 	}
 
 	.aboutus {
+		position: relative;
+
 		&__box {
 			display: flex;
 			flex-direction: column;
@@ -388,6 +390,38 @@ main {
 			}
 		}
 	}
+
+	.reviews {
+		position: relative;
+		background-color: $dark;
+
+		.wrapper {
+			.h2-decoration {
+				margin-top: 3em;
+			}
+		}
+	}
+}
+
+.custom-shape-divider-top-1722430341 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+	z-index: 999;
+}
+
+.custom-shape-divider-top-1722430341 svg {
+	position: relative;
+	display: block;
+	width: calc(100% + 1.3px);
+	height: 50px;
+}
+
+.custom-shape-divider-top-1722430341 .shape-fill {
+	fill: #0c0c0c;
 }
 
 @keyframes navItemsAnimation {
