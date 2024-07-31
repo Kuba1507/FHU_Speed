@@ -10,6 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Righteous&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="dist/css/hamburger.min.css">
     <link rel="stylesheet" href="dist/css/style.min.css">
 
@@ -140,10 +141,46 @@
                     <p class="h2-decoration-text">poznaj nasze referencje</p>
                 </div>
                 <h2 class="subheading">Opinie naszych klientów</h2>
+                <!-- Slider main container -->
+                <div class="swiper testimonials-swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide testimonials-swiper-slide">
+                            <div class="testimonials-swiper-slide__upper">
+                                <div class="testimonials-swiper-slider__upper-left"></div>
+                                <div class="testimonials-swiper-slider__upper-right">
+                                    <p class="testimonials-swiper-slider__upper-right-name"></p>
+                                    <div class="testimonials-swiper-slider__upper-right-stars">
+                                        <img src="dist/img/star.svg" alt="Ikonka gwiazdki">
+                                        <img src="dist/img/star.svg" alt="Ikonka gwiazdki">
+                                        <img src="dist/img/star.svg" alt="Ikonka gwiazdki">
+                                        <img src="dist/img/star.svg" alt="Ikonka gwiazdki">
+                                        <img src="dist/img/star.svg" alt="Ikonka gwiazdki">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonials-swiper-slider__lower">
+                                <p class="testimonials-swiper-slider__lower-text">Awaria alternatora próbowała zepsuć
+                                    nam ferie zimowe. Dziękuję za błyskawiczną naprawę. Polecam wszystkim. Konkretnie i
+                                    bardzo profesjonalnie.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide testimonials-swiper-slide">Slide 2</div>
+                        <div class="swiper-slide testimonials-swiper-slide">Slide 3</div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>
         </section>
     </main>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="dist/js/swiper.min.js"></script>
     <script src="dist/js/script.min.js"></script>
 </body>
 
