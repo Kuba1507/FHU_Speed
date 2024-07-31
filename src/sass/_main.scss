@@ -25,6 +25,10 @@ body {
 	width: min(100%, 1300px);
 }
 
+.block-scroll {
+	overflow-y: hidden;
+}
+
 .header {
 	.navbar {
 		display: flex;
@@ -47,11 +51,20 @@ body {
 			height: calc(100vh - 80px);
 			width: 100%;
 			background-color: $dark;
+			transform: translateX(-100%);
 
 			&-item {
+				padding: 1em;
+				width: 100%;
+				font-size: 2.2rem;
 				color: $pure-white;
+				text-align: center;
 				text-decoration: none;
 			}
 		}
+	}
+
+	.show-mobile-nav {
+		transform: translateX(0);
 	}
 }
