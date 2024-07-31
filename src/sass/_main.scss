@@ -91,11 +91,11 @@ body {
 			}
 		}
 
-		&__menu-desktop {
-			display: none;
-		}
+		// &__menu-desktop {
+		// 	display: none;
+		// }
 
-		&__menu-mobile {
+		&__menu {
 			position: fixed;
 			top: 80px;
 			display: flex;
@@ -111,10 +111,16 @@ body {
 			&-item {
 				padding: 1.25em;
 				width: 100%;
-				font-size: 2.2rem;
+				font-family: var(--default-font);
+				font-size: 2.1rem;
 				color: $pure-white;
 				text-align: center;
 				text-decoration: none;
+				transition: background-color 0.3s;
+
+				&:hover {
+					background-color: $orange;
+				}
 			}
 		}
 	}
