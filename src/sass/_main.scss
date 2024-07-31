@@ -86,6 +86,7 @@ body {
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
+			height: 100%;
 		}
 
 		.navbar__logo,
@@ -152,6 +153,14 @@ main {
 		span {
 			color: $orange;
 		}
+	}
+
+	.subheading {
+		margin-top: 0.3em;
+		font-family: 'Righteous', sans-serif;
+		font-size: 2.5rem;
+		color: $pure-white;
+		letter-spacing: 1px;
 	}
 
 	.h2-decoration {
@@ -352,6 +361,30 @@ main {
 				display: flex;
 				flex-direction: column;
 				margin-top: 2em;
+
+				&-description,
+				&-list {
+					font-family: 'Raleway', sans-serif;
+					color: #b1b1b1;
+					line-height: 1.5em;
+				}
+
+				&-description {
+					margin-top: 1em;
+				}
+
+				&-list {
+					margin-top: 0.5em;
+					list-style-type: disc;
+
+					&-item {
+						margin-left: 1em;
+					}
+
+					&-item::marker {
+						color: $orange;
+					}
+				}
 			}
 		}
 	}
