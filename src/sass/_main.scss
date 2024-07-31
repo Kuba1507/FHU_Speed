@@ -75,13 +75,18 @@ body {
 .header {
 	position: fixed;
 	width: 100%;
+	z-index: 999;
 
 	.navbar {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
 		height: 80px;
 		background-color: $bg-color;
+		width: 100%;
+
+		.wrapper {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
 
 		.navbar__logo,
 		.hamburger {
@@ -143,12 +148,33 @@ main {
 		height: 600px;
 		background-image: url('../img/hero-img-mobile.webp');
 		background-position: 10% 25%;
+		background-size: cover;
 		background-repeat: no-repeat;
 
 		&__shadow {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background-color: rgba(0, 0, 0, 0.3);
 		}
 
 		&__gradient {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background: rgb(0, 0, 0);
+			background: linear-gradient(
+				152deg,
+				rgba(0, 0, 0, 0.55) 13%,
+				rgba(0, 0, 0, 0.55) 28%,
+				rgba(55, 18, 9, 0.55) 62%,
+				rgba(112, 36, 19, 0.55) 82%,
+				rgba(255, 82, 43, 0.35) 100%
+			);
 		}
 	}
 }
