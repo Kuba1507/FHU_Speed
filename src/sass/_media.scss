@@ -53,6 +53,14 @@
 				}
 			}
 		}
+
+		.services {
+			&__box {
+				&-service {
+					max-width: 670px;
+				}
+			}
+		}
 	}
 }
 
@@ -79,6 +87,34 @@
 					margin-top: 3em;
 					padding: 0.8em 1em;
 					width: 230px;
+				}
+			}
+		}
+
+		.services {
+			margin-top: -8em;
+
+			&__box {
+				flex-direction: row;
+				align-items: flex-start;
+				justify-content: space-between;
+				width: 100%;
+
+				&-service {
+					width: min(100%, 400px);
+
+					&:nth-child(2),
+					&:nth-child(3) {
+						margin-top: 0;
+					}
+
+					&:nth-child(1) {
+						margin-right: 1.5em;
+					}
+
+					&:nth-child(3) {
+						margin-left: 1.5em;
+					}
 				}
 			}
 		}

@@ -162,6 +162,7 @@ main {
 		background-position: 10% 25%;
 		background-size: cover;
 		background-repeat: no-repeat;
+		z-index: 5;
 
 		.wrapper {
 			position: relative;
@@ -235,6 +236,10 @@ main {
 	}
 
 	.services {
+		position: relative;
+		margin-top: -6em;
+		z-index: 6;
+
 		&__box {
 			display: flex;
 			flex-direction: column;
@@ -272,7 +277,7 @@ main {
 				&-button {
 					display: flex;
 					align-items: center;
-					margin-top: 1.5em;
+					margin-top: 2em;
 					padding: 0.7em 1.3em;
 					font-family: 'Raleway', sans-serif;
 					font-size: 1.5rem;
