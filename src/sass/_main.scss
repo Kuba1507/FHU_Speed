@@ -37,6 +37,17 @@ body {
 		height: 80px;
 		background-color: $bg-color;
 
+		.navbar__logo,
+		.hamburger {
+			margin: 0 0.75em;
+		}
+
+		&__logo {
+			&-img {
+				width: 150px;
+			}
+		}
+
 		&__menu-desktop {
 			display: none;
 		}
@@ -51,11 +62,11 @@ body {
 			height: calc(100vh - 80px);
 			width: 100%;
 			background-color: $dark;
-			transform: translateX(-100%);
+			transform: translateX(-150%);
 			transition: transform 0.5s ease-out;
 
 			&-item {
-				padding: 1em;
+				padding: 1.25em;
 				width: 100%;
 				font-size: 2.2rem;
 				color: $pure-white;
