@@ -8,7 +8,7 @@
 				top: inherit;
 				flex-direction: row;
 				height: 80px;
-				width: 700px;
+				width: 600px;
 				background-color: $bg-color;
 				transform: translateX(0);
 
@@ -18,12 +18,68 @@
 					justify-content: center;
 					padding: 0;
 					height: 100%;
-					font-size: 1.8rem;
+					font-size: 1.7rem;
 				}
 			}
 
 			.hamburger {
 				display: none;
+			}
+		}
+	}
+
+	main {
+		.main-heading {
+			font-size: 3.8rem;
+			letter-spacing: 2px;
+		}
+
+		.welcome {
+			height: 600px;
+			background-position: 0 25%;
+
+			&-box {
+				&-decor {
+					padding: 0.35em 0.5em;
+					width: 150px;
+					font-size: 1.9rem;
+				}
+
+				&-cta {
+					margin-top: 2em;
+					padding: 0.7em 1em;
+					width: 210px;
+					font-size: 1.9rem;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	main {
+		.main-heading {
+			font-size: 4.3rem;
+			text-align: left;
+			letter-spacing: 3px;
+		}
+
+		.welcome {
+			height: 700px;
+			background-image: url('../img/hero-img.webp');
+
+			&-box {
+				align-items: flex-start;
+
+				&-decor {
+					margin-bottom: 0.7em;
+				}
+
+				&-cta {
+					margin-top: 3em;
+					padding: 0.8em 1em;
+					width: 230px;
+				}
 			}
 		}
 	}
