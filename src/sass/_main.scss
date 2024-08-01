@@ -362,7 +362,7 @@ main {
 			&-text {
 				display: flex;
 				flex-direction: column;
-				margin-top: 2em;
+				margin-top: 3em;
 
 				&-description,
 				&-list {
@@ -402,38 +402,74 @@ main {
 
 			.testimonials-swiper {
 				margin-top: 4em;
-				width: 100%;
-				height: 250px;
-				background-color: yellow;
+				width: 90%;
+				// height: 320px;
 
 				&-wrapper {
 					&-slide {
+						position: relative;
 						display: flex;
 						flex-direction: column;
+						padding: 1.5em 1.5em 3.5em 1.5em;
+						background-color: #f8f8f8;
+						border-radius: 8px;
+						overflow: hidden;
 
 						&__upper {
-							background-color: pink;
-
-							&-left {
-							}
+							display: flex;
+							align-items: center;
 
 							&-right {
+								margin-left: 1.5em;
+
 								&-name {
+									font-family: 'Righteous', sans-serif;
+									font-size: 2.1rem;
 								}
 
 								&-stars {
+									margin-top: 0.3em;
+
 									img {
-										width: 15px;
-										height: 15px;
+										width: 18px;
+										height: 18px;
 									}
 								}
 							}
 						}
 
 						&__lower {
-							background-color: green;
+							margin-top: 1.5em;
+							// background-color: green;
+
+							&-text {
+								font-family: 'Raleway', sans-serif;
+								font-size: 1.7rem;
+								line-height: 1.6em;
+							}
+						}
+
+						&__circle {
+							position: absolute;
+							top: -15%;
+							right: -15%;
+							width: 150px;
+							height: 150px;
+							border: 20px solid #ff522b;
+							border-radius: 50%;
+							opacity: 0.3;
 						}
 					}
+				}
+
+				.swiper-button-prev,
+				.swiper-button-next {
+					display: none;
+				}
+
+				.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+				.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+					background: $orange;
 				}
 			}
 		}
