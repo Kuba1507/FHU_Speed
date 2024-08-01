@@ -111,6 +111,34 @@
 			}
 		}
 
+		.contact {
+			.wrapper {
+				.contact-box {
+					display: flex;
+					flex-wrap: wrap;
+
+					&__element {
+						width: 50%;
+						margin-bottom: 4em;
+
+						&:nth-of-type(3),
+						&:nth-of-type(4) {
+							margin-bottom: 0;
+						}
+					}
+				}
+			}
+		}
+
+		.google-map {
+			margin-top: 2em;
+
+			iframe {
+				width: 100%;
+				height: 400px;
+			}
+		}
+
 		.custom-shape-divider-top-1722430341 svg {
 			height: 60px;
 		}
@@ -212,6 +240,29 @@
 						}
 					}
 				}
+			}
+		}
+
+		.contact {
+			margin-top: 2em;
+
+			.wrapper {
+				.contact-box {
+					&__element {
+						width: 25%;
+						margin-bottom: 0;
+
+						align-items: flex-start;
+					}
+				}
+			}
+		}
+
+		.google-map {
+			margin-top: 3em;
+
+			iframe {
+				height: 500px;
 			}
 		}
 
