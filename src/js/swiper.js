@@ -13,12 +13,6 @@ const swiper = new Swiper('.testimonials-swiper', {
 		clickable: true,
 	},
 
-	// Navigation arrows
-	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
-	},
-
 	// Breakpoitns
 	breakpoints: {
 		767: {
