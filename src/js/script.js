@@ -2,6 +2,7 @@ const body = document.querySelector('body')
 const burgerBtn = document.querySelector('.hamburger')
 const mobileNav = document.querySelector('.navbar__menu')
 const mobileNavItems = document.querySelectorAll('.navbar__menu-item')
+const yearSpan = document.querySelector('.actual-year')
 
 const handleNav = () => {
 	if (burgerBtn.classList.contains('is-active')) {
@@ -49,7 +50,16 @@ const removeNavItemsAnimation = () => {
 	})
 }
 
+const setYear = () => {
+	const currentYear = new Date().getFullYear()
+
+	if (yearSpan) {
+		yearSpan.textContent = currentYear
+	}
+}
+
 burgerBtn.addEventListener('click', handleNav)
 mobileNavItems.forEach(item => {
 	item.addEventListener('click', closeNav)
 })
+document.addEventListener('DOMContentLoaded', setYear)

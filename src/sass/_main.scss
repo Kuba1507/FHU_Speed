@@ -575,6 +575,29 @@ main {
 	}
 }
 
+.footer {
+	padding: 1em;
+	font-family: 'Raleway', sans-serif;
+	color: $pure-white;
+	text-align: center;
+
+	&__upper {
+		span {
+			color: $orange;
+		}
+	}
+
+	&__lower {
+		margin-top: 1em;
+		font-size: 1.3rem;
+
+		a {
+			color: $orange;
+			text-decoration: none;
+		}
+	}
+}
+
 .custom-shape-divider-top-1722430341 {
 	position: absolute;
 	top: 0;
