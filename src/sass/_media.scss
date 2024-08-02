@@ -146,6 +146,21 @@
 }
 
 @media (min-width: 992px) {
+	.header {
+		.navbar {
+			height: 100px;
+
+			&__menu {
+				height: 100%;
+				width: 700px;
+
+				&-item {
+					font-size: 1.9rem;
+				}
+			}
+		}
+	}
+
 	main {
 		.main-heading {
 			font-size: 4.3rem;
