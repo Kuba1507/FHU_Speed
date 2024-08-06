@@ -622,6 +622,43 @@ main {
 			}
 		}
 	}
+
+	.all-services {
+		padding: 1em;
+
+		.repairs-box {
+			display: flex;
+			flex-direction: column;
+
+			&__left {
+				.subheading {
+					span {
+						color: $orange;
+					}
+				}
+
+				&-text {
+					margin-top: 1em;
+					font-family: 'Raleway', sans-serif;
+					color: $pure-white;
+					line-height: 1.4em;
+
+					span {
+						display: none;
+						font-weight: 800;
+					}
+				}
+			}
+
+			&__right {
+				margin-top: 2em;
+
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
 }
 
 .footer {

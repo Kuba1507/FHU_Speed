@@ -159,6 +159,40 @@
 			}
 		}
 
+		.all-services {
+			.repairs-box {
+				flex-direction: row;
+
+				&__left {
+					flex: 1;
+
+					.subheading {
+						margin-top: 0;
+					}
+
+					&-text {
+						font-size: 1.7rem;
+						line-height: 1.5em;
+
+						span {
+							display: block;
+						}
+					}
+				}
+
+				&__right {
+					display: flex;
+					flex: 1;
+					justify-content: center;
+					margin-top: 0;
+
+					img {
+						width: 70%;
+					}
+				}
+			}
+		}
+
 		.custom-shape-divider-top-1722430341 svg {
 			height: 60px;
 		}
@@ -332,6 +366,23 @@
 
 				&__text {
 					font-size: 1.9rem;
+				}
+			}
+		}
+
+		.all-services {
+			.repairs-box {
+				&__left {
+					&-text {
+						font-size: 1.9rem;
+						line-height: 1.6em;
+					}
+				}
+
+				&__right {
+					img {
+						width: 50%;
+					}
 				}
 			}
 		}
