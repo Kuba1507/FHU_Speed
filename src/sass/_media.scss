@@ -68,7 +68,19 @@
 					width: 210px;
 					font-size: 1.9rem;
 				}
+
+				&__breadcrumbs {
+					&-link,
+					&-arrow {
+						font-size: 1.8rem;
+					}
+				}
 			}
+		}
+
+		.services-section {
+			height: 450px;
+			background-image: url('../img/services-hero-mobile.webp');
 		}
 
 		.services {
@@ -187,6 +199,17 @@
 					margin-top: 3em;
 					padding: 0.8em 1em;
 					width: 230px;
+				}
+			}
+		}
+
+		.services-section {
+			height: 550px;
+			background-image: url('../img/services-hero.webp');
+
+			.welcome-box {
+				.main-heading {
+					font-size: 4.8rem;
 				}
 			}
 		}

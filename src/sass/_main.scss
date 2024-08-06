@@ -239,6 +239,21 @@ main {
 					background-color: rgb(21, 21, 21);
 				}
 			}
+
+			&__breadcrumbs {
+				margin-top: 1em;
+
+				&-link {
+					text-decoration: none;
+				}
+
+				&-link,
+				&-arrow {
+					font-family: 'Raleway', sans-serif;
+					font-size: 1.7rem;
+					color: $pure-white;
+				}
+			}
 		}
 
 		&__shadow,
@@ -264,6 +279,15 @@ main {
 				rgba(112, 36, 19, 0.55) 82%,
 				rgba(255, 82, 43, 0.35) 100%
 			);
+		}
+	}
+
+	.services-section {
+		height: 350px;
+		background-image: url('../img/services-hero-mobile.webp');
+
+		.welcome-box {
+			margin-top: 1em;
 		}
 	}
 
