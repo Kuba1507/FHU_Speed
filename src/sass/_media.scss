@@ -208,12 +208,20 @@
 					padding: 0.8em 1em;
 					width: 230px;
 				}
+
+				&__breadcrumbs {
+					&-link,
+					&-arrow {
+						font-size: 1.9rem;
+					}
+				}
 			}
 		}
 
 		.services-section {
 			height: 550px;
 			background-image: url('../img/services-hero.webp');
+			background-position: 50% 60%;
 
 			.welcome-box {
 				.main-heading {
