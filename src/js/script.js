@@ -3,6 +3,8 @@ const burgerBtn = document.querySelector('.hamburger')
 const mobileNav = document.querySelector('.navbar__menu')
 const mobileNavItems = document.querySelectorAll('.navbar__menu-item')
 const yearSpan = document.querySelector('.actual-year')
+const contactSection = document.querySelector('.contact')
+const ctaButton = document.querySelector('.welcome-box-cta')
 
 const handleNav = () => {
 	if (burgerBtn.classList.contains('is-active')) {
@@ -50,6 +52,10 @@ const removeNavItemsAnimation = () => {
 	})
 }
 
+const moveToContact = () => {
+	contactSection.scrollIntoView({ behavior: 'smooth' })
+}
+
 const setYear = () => {
 	const currentYear = new Date().getFullYear()
 
@@ -62,4 +68,5 @@ burgerBtn.addEventListener('click', handleNav)
 mobileNavItems.forEach(item => {
 	item.addEventListener('click', closeNav)
 })
+ctaButton.addEventListener('click', moveToContact)
 document.addEventListener('DOMContentLoaded', setYear)
