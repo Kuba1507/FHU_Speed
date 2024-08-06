@@ -600,6 +600,8 @@ main {
 	}
 
 	.notification {
+		padding: 2em 1em 0 1em;
+
 		&-box {
 			display: flex;
 			flex-direction: column;
@@ -624,8 +626,6 @@ main {
 	}
 
 	.all-services {
-		padding: 1em;
-
 		.repairs-box {
 			display: flex;
 			flex-direction: column;
@@ -665,7 +665,7 @@ main {
 			margin-top: 2em;
 
 			&__element {
-				margin-top: 2em;
+				margin-top: 2.2em;
 
 				&-heading,
 				&-list {
@@ -686,7 +686,7 @@ main {
 					font-family: 'Raleway', sans-serif;
 
 					&-item {
-						margin-top: 0.4em;
+						margin-top: 0.5em;
 					}
 				}
 
@@ -695,6 +695,10 @@ main {
 				}
 			}
 		}
+	}
+
+	.section-grey {
+		background-color: $dark;
 	}
 }
 
