@@ -151,6 +151,14 @@
 			}
 		}
 
+		.notification {
+			&-box {
+				&__text {
+					font-size: 1.7rem;
+				}
+			}
+		}
+
 		.custom-shape-divider-top-1722430341 svg {
 			height: 60px;
 		}
@@ -301,6 +309,22 @@
 
 			iframe {
 				height: 500px;
+			}
+		}
+
+		.notification {
+			&-box {
+				padding: 1.5em;
+
+				&__icon {
+					margin-bottom: 1.25em;
+					width: 55px;
+					height: 55px;
+				}
+
+				&__text {
+					font-size: 1.9rem;
+				}
 			}
 		}
 

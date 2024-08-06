@@ -598,6 +598,30 @@ main {
 			filter: invert(90%);
 		}
 	}
+
+	.notification {
+		&-box {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 1em;
+			background-color: $dark;
+
+			&__icon {
+				margin-bottom: 1em;
+				width: 45px;
+				height: 45px;
+			}
+
+			&__text {
+				font-family: 'Raleway', sans-serif;
+				font-weight: 600;
+				color: $pure-white;
+				text-align: center;
+				line-height: 1.5em;
+			}
+		}
+	}
 }
 
 .footer {
