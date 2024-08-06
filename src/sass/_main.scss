@@ -658,6 +658,43 @@ main {
 				}
 			}
 		}
+
+		.all-services-box {
+			display: flex;
+			flex-direction: column;
+			margin-top: 2em;
+
+			&__element {
+				margin-top: 2em;
+
+				&-heading,
+				&-list {
+					color: $pure-white;
+				}
+
+				&-heading {
+					font-family: 'Righteous', sans-serif;
+					font-size: 2.1rem;
+
+					span {
+						color: $orange;
+					}
+				}
+
+				&-list {
+					margin-left: 1.5em;
+					font-family: 'Raleway', sans-serif;
+
+					&-item {
+						margin-top: 0.4em;
+					}
+				}
+
+				&:nth-of-type(1) {
+					margin-top: 0;
+				}
+			}
+		}
 	}
 }
 
