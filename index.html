@@ -13,6 +13,7 @@
         href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Righteous&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="dist/css/hamburger.min.css">
     <link rel="stylesheet" href="dist/css/style.min.css">
 </head>
@@ -42,9 +43,11 @@
         <section class="section welcome">
             <div class="wrapper">
                 <div class="welcome-box">
-                    <p class="welcome-box-decor">F.U.H SPEED</p>
-                    <h1 class="main-heading">Naprawy bieżące<br>oraz serwis <span>klimatyzacji</span></h1>
-                    <button class="welcome-box-cta">Skontaktuj się</button>
+                    <p class="welcome-box-decor" data-aos="fade-up">F.U.H SPEED</p>
+                    <h1 class="main-heading" data-aos="fade-up" data-aos-delay="200">Naprawy bieżące<br>oraz serwis
+                        <span>klimatyzacji</span>
+                    </h1>
+                    <button class="welcome-box-cta" data-aos="fade-up" data-aos-delay="400">Skontaktuj się</button>
                 </div>
             </div>
             <div class="welcome__shadow"></div>
@@ -53,7 +56,7 @@
         <section class="section services">
             <div class="wrapper">
                 <div class="services__box">
-                    <div class="services__box-service">
+                    <div class="services__box-service" data-aos="fade-up" data-aos-delay="600">
                         <img src="dist/img/engine.svg" alt="Ikonka silnika" class="services__box-service-icon">
                         <p class="services__box-service-title">Naprawy bieżące</p>
                         <p class="services__box-service-description">Wykonujemy szeroki zakres napraw bieżących,
@@ -64,7 +67,7 @@
                                     d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414Z" />
                             </svg></button>
                     </div>
-                    <div class="services__box-service">
+                    <div class="services__box-service" data-aos="fade-up" data-aos-delay="800">
                         <img src="dist/img/air.svg" alt="Ikonka powietrza" class="services__box-service-icon">
                         <p class="services__box-service-title">Serwis klimatyzacji</p>
                         <p class="services__box-service-description">Profesjonalnie serwisujemy klimatyzację,
@@ -75,7 +78,7 @@
                                     d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414Z" />
                             </svg></button>
                     </div>
-                    <div class="services__box-service">
+                    <div class="services__box-service" data-aos="fade-up" data-aos-delay="1000">
                         <img src="dist/img/oil-fill.svg" alt="Ikonka oleju silnikowego"
                             class="services__box-service-icon">
                         <p class="services__box-service-title">Chemia motoryzacyjna</p>
@@ -93,11 +96,11 @@
         <section class="section aboutus" id="o-nas">
             <div class="wrapper">
                 <div class="aboutus__box">
-                    <div class="aboutus__box-img">
+                    <div class="aboutus__box-img" data-aos="zoom-in-right">
                         <img src="dist/img/aboutus-img.webp" alt="Kobieta prowadząca samochód marki Audi"
                             class="aboutus__box-img-image">
                     </div>
-                    <div class="aboutus__box-text">
+                    <div class="aboutus__box-text" data-aos="zoom-in-left" data-aos-delay="200">
                         <div class="h2-decoration">
                             <div class="h2-decoration-line"></div>
                             <p class="h2-decoration-text">więcej o nas</p>
@@ -283,7 +286,7 @@
                 </div>
                 <h2 class="subheading">Skontaktuj się z nami</h2>
                 <div class="contact-box">
-                    <div class="contact-box__element">
+                    <div class="contact-box__element" data-aos="flip-left">
                         <div class="contact-box__element-title">
                             <img src="dist/img/clock.svg" alt="Ikonka zegarka" class="contact-box__element-title-icon">
                             <p class="contact-box__element-title-name">Godziny otwarcia</p>
@@ -295,7 +298,7 @@
                         <p class="contact-box__element-content semi-bold">Niedziela</p>
                         <p class="contact-box__element-content">Zamknięte</p>
                     </div>
-                    <div class="contact-box__element">
+                    <div class="contact-box__element" data-aos="flip-left" data-aos-delay="200">
                         <div class="contact-box__element-title">
                             <img src="dist/img/map-pin.svg" alt="Ikonka lokalizacji"
                                 class="contact-box__element-title-icon">
@@ -304,14 +307,15 @@
                         <p class="contact-box__element-content">ul. Słowackiego 51</p>
                         <p class="contact-box__element-content">24-415 Kunów</p>
                     </div>
-                    <div class="contact-box__element">
+                    <div class="contact-box__element" data-aos="flip-left" data-aos-delay="400">
                         <div class="contact-box__element-title">
                             <img src="dist/img/mail.svg" alt="Ikonka e-maila" class="contact-box__element-title-icon">
                             <p class="contact-box__element-title-name">E-mail</p>
                         </div>
                         <p class="contact-box__element-content">panag@poczta.fm</p>
                     </div>
-                    <div class="contact-box__element contact-box__element--last">
+                    <div class="contact-box__element contact-box__element--last" data-aos="flip-left"
+                        data-aos-delay="600">
                         <div class="contact-box__element-title">
                             <img src="dist/img/phone.svg" alt="Ikonka telefonu" class="contact-box__element-title-icon">
                             <p class="contact-box__element-title-name">Telefon</p>
@@ -335,6 +339,8 @@
                 class="footer__lower-link">kubaWebsites</a></p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="dist/js/aos.min.js"></script>
     <script src="dist/js/swiper.min.js"></script>
     <script src="dist/js/script.min.js"></script>
 </body>
